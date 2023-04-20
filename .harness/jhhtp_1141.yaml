@@ -45,7 +45,6 @@ pipeline:
                     connectorRef: Docker_P114
                     repo: index.docker.io/id10terrordfw/harnesslabs
                     tags:
-                      - <+pipeline.sequenceId>
                       - jhttp
           platform:
             os: Linux
