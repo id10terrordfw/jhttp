@@ -5,7 +5,7 @@ pipeline:
   orgIdentifier: P114
   tags: {}
   variables:
-    - name: DOCKERHUB_USERNAME
+    - name: Docker_username
       type: String
       description: Your Docker Hub username
       value: <+input>
