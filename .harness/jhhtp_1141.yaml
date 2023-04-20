@@ -46,6 +46,7 @@ pipeline:
                     repo: index.docker.io/id10terrordfw/harnesslabs
                     tags:
                       - <+pipeline.sequenceId>
+                      - jhttp
           platform:
             os: Linux
             arch: Amd64
