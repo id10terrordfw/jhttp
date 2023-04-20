@@ -43,7 +43,7 @@ pipeline:
                   identifier: BuildandPushanimagetoDockerRegistry
                   spec:
                     connectorRef: Docker_P114
-                    repo: <+pipeline.variables.DOCKERHUB_USERNAME>/jhttp
+                    repo: index.docker.io/id10terrordfw/harnesslabs
                     tags:
                       - <+pipeline.sequenceId>
           platform:
@@ -73,7 +73,7 @@ pipeline:
                   identifier: Run_Java_HTTP_Server
                   spec:
                     connectorRef: Docker_P114
-                    image: <+pipeline.variables.DOCKERHUB_USERNAME>/jhttp:<+pipeline.sequenceId>
+                    image: index.docker.io/id10terrordfw/harnesslabs:jhttp
                     shell: Sh
                     portBindings:
                       "8888": "8888"
