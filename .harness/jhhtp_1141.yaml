@@ -8,7 +8,7 @@ pipeline:
     - name: Docker_username
       type: String
       description: Your Docker Hub username
-      value: <+input>
+      value: <+pipeline.variables.Docker_username>
   stages:
     - stage:
         name: Build
